@@ -13,12 +13,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./assets/Logo String.png" />
     <title>Loja String Music</title>
   </head>
 
   <body>
     <header>
-      <nav>
+      <nav class="nav">
         <div class="logo">
           <a href="./index.html"><img src="./assets/logoh.png" alt="logo" /></a>
         </div>
@@ -29,12 +30,31 @@
           <div class="line3"></div>
         </div>
         <ul class="nav-list">
-          <li><a href="./index.html">Início</a></li>
-          <li><a href="#">Portifólio</a></li>
-          <li><a href="#">Contato</a></li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              onclick="redirectPageOrSection('#quem-somos')"
+              >Quem Somos</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              onclick="redirectPageOrSection('./portifolio.html')"
+              >Portifólio</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              onclick="redirectPageOrSection('#contato')"
+              >Contato</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
+
     <script src="./js/script.js"></script>
   </body>
 </html>

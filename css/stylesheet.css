@@ -218,10 +218,6 @@ header a:hover::after {
   color: #000;
 }
 
-.form {
-  /* width: 50vw; */
-}
-
 button {
   margin-top: 2vh;
   width: 5vw;
