@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Marcus Vinicius e Pedro Enrique" />
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Loja String Music</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <a href="./index.html"><img src="./assets/logoh.png" alt="logo" /></a>
+        </div>
+
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="javascript:void(0);" onclick="redirectPageOrSection('#quem-somos')">Quem Somos</a></li>
+          <li><a  href="javascript:void(0);" onclick="redirectPageOrSection('./portifolio.html')">Portifólio</a></li>
+          <li><a  href="javascript:void(0);" onclick="redirectPageOrSection('#contato')">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+      <div class="heading">
+        <h1 class="heading-text">
+          Os melhores equipamentos e instrumentos estão aqui
+        </h1>
+      </div>
+    </div>
+
+    <div id="quem-somos" class="content">
+      <div class="content-all">
+        <div class="content-title">
+          <h1>Quem somos</h1>
+        </div>
+
+        <div class="content-text">
+          <p>
+            Somos uma loja física de instrumentos e atualmente estendemos nosso
+            negócio para a internet, entregando em sua porta os melhores
+            instrumentos e artigos musicais.
+          </p>
+        </div>
+      </div>
+
+      <div class="icons">
+        <div class="ecom">
+          <img src="./assets/icons/ecommerce-icon-17.jpg" alt="" />
+        </div>
+
+        <div class="guitar">
+          <img src="./assets/icons/Icons8-Ios7-Music-Guitar.ico" alt="" />
+        </div>
+
+        <div class="deliver">
+          <img src="./assets/icons/89737.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="content2">
+      <div class="merchan">
+        <h1>
+          Acesse nosso <a href="./portifolio.html">portifólio</a> e conheça
+          nossa loja
+        </h1>
+      </div>
+    </div>
+
+    <div class="news" id="contato">
+      <div class="contatos">
+        <div class="logo2">
+          <img src="./assets/Logo Fundo Escuro.png" alt="" />
+        </div>
+
+        <div class="redes">
+          <div class="facebook">
+            <img src="./assets/icons/facebook.png" alt="facebook" />
+          </div>
+
+          <div class="instagram">
+            <img src="./assets/icons/instagram.png" alt="instagram" />
+          </div>
+
+          <div class="whatsapp">
+            <img src="./assets/icons/whatsapp.png" alt="whatsapp" />
+          </div>
+        </div>
+      </div>
+
+      <div class="form">
+        <h1>Newsletter</h1>
+        <p>Inscreva-se no nosso Newsletter e receba as nossas novidades!</p>
+        <form action="mailto:pedro.martins55757@gmail.com" method="post">
+          <input
+            name="newsletter"
+            type="email"
+            placeholder="insira seu email"
+            required
+          />
+          <div class="submit">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+      const nav = document.querySelector(".nav");
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener("scroll", () => {
+        if (lastScrollY < window.scrollY) {
+          nav.classList.add("nav--hidden");
+        } else {
+          nav.classList.remove("nav--hidden");
+        }
+
+        lastScrollY = window.scrollY;
+      });
+    </script>
+  </body>
+</html>
