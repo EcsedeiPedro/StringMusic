@@ -209,9 +209,11 @@ header a:hover::after {
   padding: 0.5vw;
 }
 
-.form input:focus {
+.form input:focus-visible {
   background: #fff;
   color: #000;
+  outline: none;
+  border: 2px solid #f1a221;
 }
 
 .form button:active {
