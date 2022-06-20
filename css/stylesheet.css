@@ -48,6 +48,7 @@ header a:hover::after {
   width: 100vw;
   position: fixed;
   transition: transform .5s;
+  font-family: 'Habibi', serif;
 }
 
 .nav--hidden {
@@ -261,9 +262,11 @@ hr {
   width: 100vw;
 }
 
+.content2 a {
+  color: #f1a221;
+}
 
-
-@media (max-width: 999px) {
+@media (max-width: 1365px) {
 
   body {
     overflow-x: hidden;
@@ -343,6 +346,7 @@ hr {
   }
 
   .main {
+    width: 100vw;
     height: 100vh;
     background-image: url(./fundo2.jpg);
   }
@@ -373,17 +377,18 @@ hr {
   }
 
   .icons {
-    width: 100vw;
+    width: 90vw;
     height: 30vh;
     margin-top: 5vh;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    justify-content: space-between;
   }
 
   .icons img {
     margin-top: 15vh;
-    width: 20vw;
-    height: 20vh;
+    width: 10vw;
+    height: 5vh;
   }
 
   .news {
@@ -509,7 +514,6 @@ hr {
 
   .icons img {
     width: 20vw;
-    height: 20vh;
   }
 
   .news {
@@ -575,15 +579,21 @@ hr {
 @media (min-width: 769px) and (max-width: 1279px) {
   .nav {
     height: 20vh;
+    width: 100vw;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
   .logo {
     width: 5vw;
     height: 5vh;
+    margin-left: 5vw;
   }
 
   .logo img {
-    width: 12vw;
+    width: 10vw;
   }
 
   .mobile-menu div {
@@ -597,6 +607,7 @@ hr {
   }
 
   .main {
+    width: 100vw;
     height: 100vh;
     background-image: url(./fundo2.jpg);
   }
@@ -630,16 +641,20 @@ hr {
   }
 
   .icons {
-    width: 100vw;
+    width: 80vw;
     height: 30vh;
     margin-top: 5vh;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 
   .icons img {
-    width: 20vw;
+    width: 15vw;
     height: 20vh;
+  }
+
+  .merchan {
+    font-size: 3vw;
   }
 
   .news {
